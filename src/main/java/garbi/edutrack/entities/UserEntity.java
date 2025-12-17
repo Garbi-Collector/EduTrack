@@ -8,8 +8,17 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
- * Representa tanto alumnos como creadores de cursos
+ * Representa a un usuario del sistema.
+ *
+ * Un usuario puede inscribirse en uno o varios cursos y realizar el seguimiento
+ * de su progreso a través de las lecciones. Dependiendo de su rol, también puede
+ * crear y administrar cursos.
+ *
+ * Esta entidad actúa como el punto central para la inscripción a cursos
+ * (Enrollment) y el registro del progreso individual en cada lección
+ * (LessonProgress).
  */
+
 @Entity
 @Table(name = "users")
 @Data
@@ -32,8 +41,8 @@ public class UserEntity {
     @Column(nullable = false)
     private String password;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id", nullable = false)
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private RoleEntity role;
 
     @Column(nullable = false, updatable = false)

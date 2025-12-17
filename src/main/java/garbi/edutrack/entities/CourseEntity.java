@@ -9,6 +9,17 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+/**
+ * Representa un curso dentro de la plataforma educativa.
+ *
+ * Un curso agrupa módulos y lecciones organizadas de forma jerárquica y es creado
+ * por un usuario con rol de instructor. Los usuarios pueden inscribirse en el
+ * curso para acceder a su contenido y realizar el seguimiento de su progreso.
+ *
+ * El estado del curso permite controlar su disponibilidad (borrador, publicado,
+ * archivado).
+ */
+
 @Entity
 @Table(name = "courses")
 @Data
