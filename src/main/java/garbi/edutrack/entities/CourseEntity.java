@@ -1,5 +1,6 @@
 package garbi.edutrack.entities;
 
+import garbi.edutrack.entities.enums.StatusesEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

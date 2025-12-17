@@ -1,5 +1,6 @@
 package garbi.edutrack.entities;
 
+import garbi.edutrack.entities.enums.EnrollmentStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

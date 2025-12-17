@@ -1,5 +1,6 @@
 package garbi.edutrack.entities;
 
+import garbi.edutrack.entities.enums.RoleEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
